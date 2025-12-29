@@ -38,7 +38,7 @@ export const routes: Routes = [
         path: 'settings',
         loadComponent: () => import('./features/settings/settings/settings').then(m => m.Settings)
       },
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+      { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
     ]
   }
 ];
